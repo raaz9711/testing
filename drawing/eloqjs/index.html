@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My home page</title>
+    </head>
+    <body>
+<!-- <h1>My home page</h1>
+<p>Hello, I'm Marijn and this is my home page.</p>
+<p>I also write books read it <a href="www.yahoo.com">here.</a></p> -->
+<!-- <p>paragraph 1</p>
+<p>paragraph 2</p> 
+<p>paragraph 3</p>     -->
+<!-- 
+<p>The <img src="assets/mountain.jpg" height="200" width="200" alt="mountain ">And
+<img src="assets/tree.jpg" height="200" width="200" alt="tree">
+</p>
+<p><button onclick="replace()">Replace</button></p> -->
+
+
+<!-- 
+<script>
+function replace(){
+    let images = document.body.getElementsByTagName("img");
+    for(let i=images.length-1;i>= 0; i--){
+        let image=images[i];
+        if(image.alt){
+            let text=document.createTextNode(image.alt);
+            image.parentNode.replaceChild(text,image);
+        }
+    }
+}
+</script> -->
+
+<!-- <blockquote id="quote">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eveniet unde amet commodi perspiciatis nam vel, animi, minus sequi ullam incidunt aliquid sed cumque asperiores vitae id atque voluptatum tenetur.
+</blockquote>
+<script>
+function elt(type, ...children){
+let node =document.createElement(type);
+for(let child of children ){
+    if(typeof child != "string") node.appendChild(child);
+    else node.appendChild(document.createTextNode(child));
+}
+return node;
+}
+document.body.querySelector("#quote").appendChild(elt("footer","-",elt("strong", "Karl Popper"),
+",Preface to second edition of",elt("em","the open society and its enenmy"),", 1950"));
+
+
+</script> -->
+<!-- <p data-classified="top-secret" data-color="red">launch code 00000</p>
+<p data-classified="not-secrete" data-color="blue">I have two feet.</p>
+
+<script>
+let params = document.querySelectorAll("p");
+// console.log(params);
+for(let param of Array.from(params)){
+    if(param.getAttribute("data-classified")=="top-secret"){
+        param.remove();
+    }
+
+}
+</script> -->
+
+<h1>Mountains</h1>
+
+<div id="mountains"></div>
+
+<script>
+  const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+  ];
+
+  const table =document.createElement('table');
+  const th =document.createElement('th');
+  const th1 =document.createElement('th');
+  const th2 =document.createElement('th');
+
+  const tr =document.createElement('tr');
+
+  const td =document.createElement('td');
+  const td1 =document.createElement('td');
+
+  const td2 =document.createElement('td');
+
+
+
+  document.querySelector("#mountains").append(table);
+  table.appendChild(tr);
+
+  tr.appendChild(th).innerHTML="name";
+  tr.appendChild(th1).innerHTML="height";
+  tr.appendChild(th2).innerHTML="place";
+
+
+
+var l=MOUNTAINS.length;
+console.log(l);
+// let trh = new Array(l);
+// for(let i=0;i<l;i++){
+
+
+// }
+let trn = []
+ for(let i=0;i<l;i++){
+
+   trn[i]=document.createElement('tr');
+console.log(trn[i] +":")
+  table.appendChild(trn[i]);
+// console.log(trn[i])
+     
+trn[i].appendChild(td).innerHTML=MOUNTAINS[i].name;
+trn[i].appendChild(td1).innerHTML=MOUNTAINS[i].place;
+trn[i].appendChild(td2).innerHTML=MOUNTAINS[i].height;
+// table.appendChild(tr1);
+ }
+
+//   tr.appendChild(td);
+
+
+
+
+</script>
+
+</body>
+</html>

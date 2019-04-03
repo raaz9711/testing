@@ -1,0 +1,36 @@
+body{
+    margin:0px;
+}
+.nav1{
+    margin:0px;
+}
+ul.navbar1{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    background-color: #e2e2e2;
+
+}
+
+li.navbar1{
+    float:left;
+    /* padding: 8px 16px; */
+
+}
+li.navbar1 a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    padding: 14px 16px;
+  text-align:center;
+}
+
+li.navbar1:hover:not(.active){
+    background-color: white;
+    color: black;
+}
+/* .active{
+    background-color:#4CAF50;
+ color: white;
+} */
