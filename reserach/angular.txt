@@ -1,2 +1,7 @@
-loremnb;ln;fmld
-sfnlnfdnlnld
+Introduction
+Angular is one of the most well-known solutions for SPA (single-page application) development.
+Angular was release in year of 2009 for development of project of web applicaton fast and smooth manner.
+angular various has been released since then .The first version of angular was known as angularjs.
+But after sometime it stating to lose its hold over some new framework and new implemenation of javascript
+then it was rewritten from the scratch.the AOT(ahead of time ) compilation was introdued along with tree shaking.
+AOT converts Typescript and Html into Javascript during build time.while tree shaking get 

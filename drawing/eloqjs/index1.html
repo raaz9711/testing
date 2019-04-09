@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            mj;glbmf,
+        </title>
+        <style>
+        @keyframes exm{
+            from {
+                left:100px;
+            }
+            to{
+                left:900px;
+            }
+        }
+        #bar{
+/* display: inline; */
+/* float: left; */
+display: inline-block;
+animation-name: exm;
+animation-duration: 10s;
+animation-iteration-count: 3;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+        </style>
+   
+    </head>
+    <body>
+
+
+        <!-- <h1>hello,world</h1> -->
+        <div class="container" style="height:500px;width:1000px; position:relative; border-bottom:2px solid black;">
+<div id="bar" style="height:50px;width:50px; background-color: red;
+position:absolute;
+bottom: 0px;
+">
+    </div>
+</div>
+<br> 
+<button>
+            click any button!
+        </button>
+        <script>
+        let but=document.querySelector('button');
+        let div=document.querySelector('#bar');
+
+        randomdiv=document.createElement('div');
+        // randoomdiv.setA
+        div.appendChild(randomdiv);
+        randomdiv.setAttribute('style','height:50px;width:50px;background-color:purple;position:absolute;bottom:0px;left:900px;');
+randomdiv.setAttribute("class","rider");
+let distx = 900;
+let disty=2;
+console.log(distx+""+disty);
+let container=document.querySelector(".container");
+
+window.addEventListener("keydown", event => {
+if(distx>100){
+    if(event.key=="a"||event.key=="A"){
+        distx=distx-5;
+        console.log(distx);
+        document.querySelector(".rider").style.left=distx+"px";
+
+        console.log(distx);
+    }
+
+    else if(event.key=="w"||event.key=="W"){
+        disty=disty-5;
+        console.log(disty);
+        document.querySelector(".rider").style.top=disty+"px";
+
+        console.log(disty);
+    }
+    else if(event.key=="s"||event.key=="S"){
+        disty=disty+5;
+        console.log(disty);
+        document.querySelector(".rider").style.top=disty+"px";
+
+        console.log(disty);
+    }
+    else if(event.key=="d"||event.key=="D"){
+        distx=distx+5;
+        console.log(distx);
+        document.querySelector(".rider").style.left=distx+"px";
+
+        console.log(distx);
+    }
+
+}});
+
+
+
+        </script>
+    </body>
+</html>

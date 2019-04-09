@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>event handling...</title>
+    </head>
+    <body>
+        <h1>event handling ...</h1>
+  <p>
+      this is a paragraph <button>click!</button>
+  </p>
+  <p>Press control and space to continue</p>
+<a href="www.google.com">google</a>
+<p>This page will turn violet id you press key v</p>
+  <script>
+  let par =document.querySelector('p');
+  let btn=document.querySelector('button');
+
+  par.addEventListener('mousedown', () => {
+      console.log('Handler for pargraph');
+  });
+  btn.addEventListener('mousedown', event => {
+  console.log("handler for button");
+  if(event.button==2){
+      event.stopPropagation();
+  }
+  });
+  let link=document.querySelector('a');
+  link.addEventListener('click', event =>{
+console.log("nope");
+event.preventDefault();
+  });
+
+  window.addEventListener('keydown', event => {
+      if(event.key=='v'){
+          document.body.style.backgroundColor='violet';
+      }
+  }
+  );
+  window.addEventListener('keyup', event => {
+      if(event.key=='v'){
+          document.body.style.backgroundColor='';
+      }
+
+  }
+  );
+
+  window.addEventListener('keydown', event => {
+if(event.key==' '&& event.ctrlKey){
+    console.log('continue');
+}
+  });
+  </script>
+    </body>
+</html>
