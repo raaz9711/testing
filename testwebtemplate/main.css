@@ -1,0 +1,100 @@
+/* anch_link lielem  ulelem navicon*/
+/* #navbtn */
+
+nav{
+    position:relative;
+}
+
+.lielem{
+    list-style-type: none;
+    text-align: center
+
+}
+.lielem:hover{
+background-color: white;
+color: black;
+}
+.anch_link{
+    text-decoration: none;
+    color:#03FCFB;
+    font-weight: 400;
+    
+}
+
+
+
+.ulelem{
+    background-color:#AB03FC;
+    width: 150px;
+    
+    position: absolute;
+    display: none;
+    padding: 0px;
+    cursor: pointer;
+    animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+/* nav button code */
+.navicon1,.navicon2,.navicon3{
+    width:30px;
+    height:5px;
+    background-color:black;
+    margin: 6px 0; 
+}
+#navbtn{
+    background-color:white;
+    position: fixed;
+    right:0px;
+    top:8px;
+    opacity: 1;
+    box-shadow: 2px,4px,6px,#808080;
+}
+
+/* x btn code */
+.xbtn{
+    background-color:white;
+    position: absolute;
+    right: 0px;
+
+}
+
+.change .navicon1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .navicon2 {opacity: 0;}
+  
+  .change .navicon3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  @keyframes exm{
+      from{
+      left:-150px;
+      }
+      to{
+          left:5px;
+      }
+      
+  }
+
+  @keyframes toptodown{
+    from{
+    right:-150px;
+    }
+    to{
+        right:0px;
+    }
+    
+}
+/* scroll code */
+.scroll{
+    background-color: #AB03FC;
+    width: 100%;
+    height: 4px;
+    position: fixed;
+
+
+}
