@@ -37,10 +37,16 @@ console.log(window.scrollY);
 // scroll.style=""}
 window.addEventListener("scroll",scrollfun);
  function scrollfun(){
+     scroll.style.display="block";
+
+    var hth1=document.body.offsetHeight;
+    console.log("height total"+hth1)
     console.log(window.scrollY);
     // var sct=window.scrollY+window.innerHeight;
-    var sct=window.scrollY/3;
-    
-    console.log(sct);
-    scroll.style.width=sct+"px";
+    var sct=window.scrollY;
+    sct=sct+window.innerHeight;
+    console.log("sct value"+sct)
+var per=(sct/hth1)*100;    
+    console.log("percentage: " +per);
+    scroll.style.width=per+"%";
 }

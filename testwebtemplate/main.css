@@ -91,6 +91,7 @@ animation-fill-mode: forwards;
 }
 /* scroll code */
 .scroll{
+    display: none;
     background-color: #AB03FC;
     width: 100%;
     height: 4px;
