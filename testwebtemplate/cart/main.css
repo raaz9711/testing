@@ -9,3 +9,35 @@ btn1{
     position: relative;
     border: 2px solid red;
 }
+
+.popup{
+ 
+    border:20px solid gray;
+    padding: 10px;
+    display:none;
+height: auto;
+    width:600px;
+    position: relative;
+    left:250px;
+    right: 250px;
+    /* top:250px; */
+}
+.emailsection{
+    display: flex;
+    flex-direction: row;
+}
+.cross{
+    padding: 3px;
+    position: absolute;
+    border: solid 2px black;
+    background-color: #F8F8F8;
+   
+    border-radius:100%; 
+    font-size: 16px;
+    right: -20px;
+    top:-20px;
+}
+.belhead{
+    background-color: #F8F8F8;
+    /* opacity: 0.5; */
+}
