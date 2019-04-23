@@ -15,7 +15,7 @@ function anim(){
     // navbtn.style.right="0px"
     ulelem.style.animationName ="toptodown";
 // console.log(window.innerHeight);
-var menlen=window.innerHeight+window.scrollY;
+var menlen=document.body.offsetHeight;
 ulelem.style.height=menlen+"px";
 if(window.scrollY){
     console.log("in if loop");

@@ -93,9 +93,10 @@ animation-fill-mode: forwards;
 .scroll{
     display: none;
     background-color: #AB03FC;
-    width: 100%;
-    height: 4px;
+    width: 3px;
+    height: 2px;
     position: fixed;
+    /* right:0px; */
 
 
 }

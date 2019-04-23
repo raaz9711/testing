@@ -1,0 +1,11 @@
+.jumbotron{
+    display: none;
+    position: absolute;
+    width:200px;
+    height:200px;
+}
+
+btn1{
+    position: relative;
+    border: 2px solid red;
+}
